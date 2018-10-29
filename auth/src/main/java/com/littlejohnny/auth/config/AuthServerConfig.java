@@ -1,3 +1,5 @@
+package com.littlejohnny.auth.config;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -33,7 +35,7 @@ public class AuthServerConfig  extends AuthorizationServerConfigurerAdapter {
         configurer
                 .inMemory()
                 .withClient("devglan-client")
-                .secret("devglan-secret")
+                .secret("$2a$04$e/c1/RfsWuThaWFCrcCuJeoyvwCV0URN/6Pn9ZFlrtIWaU/vj/BfG")
                 .authorizedGrantTypes("password", "authorization_code", "refresh_token", "implicit" )
                 .scopes("read", "write", "trust")
                 .accessTokenValiditySeconds(60*60)
