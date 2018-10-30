@@ -1,4 +1,4 @@
-package com.littlejohnny.resource.config;
+package com.littlejohnny.auth.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

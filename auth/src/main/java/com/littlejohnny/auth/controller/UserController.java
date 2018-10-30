@@ -1,4 +1,4 @@
-package com.littlejohnny.resource.controller;
+package com.littlejohnny.auth.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

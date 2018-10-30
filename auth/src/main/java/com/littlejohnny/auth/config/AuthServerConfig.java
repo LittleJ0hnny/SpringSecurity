@@ -35,7 +35,7 @@ public class AuthServerConfig  extends AuthorizationServerConfigurerAdapter {
         configurer
                 .inMemory()
                 .withClient("devglan-client")
-                .secret("$2a$04$e/c1/RfsWuThaWFCrcCuJeoyvwCV0URN/6Pn9ZFlrtIWaU/vj/BfG")
+                .secret("devglan-password")
                 .authorizedGrantTypes("password", "authorization_code", "refresh_token", "implicit" )
                 .scopes("read", "write", "trust")
                 .accessTokenValiditySeconds(60*60)
